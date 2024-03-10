@@ -12,6 +12,7 @@ jobs:
       OIDC_AUDIENCE: 'jfrog-github'
       OIDC_PROVIDER: 'github'
       PLATFORM_REPO: 'guy-npm-dev'
+      JFROG_CLI_LOG_LEVEL: DEBUG
      defaults:
       run:
         working-directory: ./package
