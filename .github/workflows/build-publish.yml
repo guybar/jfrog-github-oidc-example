@@ -13,7 +13,6 @@ jobs:
       OIDC_AUDIENCE: 'jfrog-github'
       OIDC_PROVIDER: 'guy-github'
       PLATFORM_REPO: 'guy-npm-dev'
-      JF_USER: guy-admin
       JFROG_CLI_LOG_LEVEL: DEBUG
      defaults:
       run:
