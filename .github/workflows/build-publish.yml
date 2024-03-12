@@ -10,10 +10,12 @@ jobs:
   build:
      runs-on: ubuntu-latest
      env:
-      OIDC_AUDIENCE: 'jfrog-github'
-      OIDC_PROVIDER: 'guy-github'
+      # OIDC_AUDIENCE: 'jfrog-github'
+      # OIDC_PROVIDER: 'guy-github'
       PLATFORM_REPO: 'guy-npm-dev'
       JFROG_CLI_LOG_LEVEL: DEBUG
+      JF_USER: guyyb@jfrog.com
+      JF_PASSWORD: eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiI5RDkzSk1Bbzk3ekpIazdjZDluWlNZNEgyWFE1amtzSTB0ZTNoM0h4WEpJIn0.eyJzdWIiOiJqZmFjQDAxaHJwZG5zeGNlMzMzMW1zcXl4NzQwbngxL3VzZXJzL2d1eXliQGpmcm9nLmNvbSIsInNjcCI6ImFwcGxpZWQtcGVybWlzc2lvbnMvZ3JvdXBzOlwidGVzdFwiLCIsImF1ZCI6IipAKiIsImlzcyI6ImpmZmVAMDFocnBkbnN4Y2UzMzMxbXNxeXg3NDBueDEiLCJleHAiOjE3MTAyNDY1NTAsImlhdCI6MTcxMDI0Mjk1MCwianRpIjoiYmE2OTc5NTAtZTQ2Yi00ZjNiLTkyZGEtZDE5MzA4ZTYxMDRiIn0.Vufs69rNJURd9qmw1TXcFuzyYUeo6RY4TNq5FcjCbYUKFei4_iA-9yOheDu0eWevnqIiPYXWnDCrRG8UZ6A-JLqwclkzA_5i6cb9EJL0W0krzYAfVON61E1FK2qLxtKOjNbuG_K5k8MPyUcVRib5XcJBJ3xA-zW3UXxNFn5MH7WmdmieZPaPkI3v9lp8ldxrqSeTPdb8BY_7Lfev6a2KhpfxD3WIq1H22_ABATnqKUaNjZBT3jU8R_OO2H3Z4e_NIZ5UGF1xB6sNF3740eymfb7KGKSkBRQh1AI1ewo6jqDyYMmDN0LFysQb8LdIBlQfh4W5Wl8eGqzdqIwHsuTK_g
      defaults:
       run:
         working-directory: ./package
